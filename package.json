@@ -1,0 +1,22 @@
+{
+  "name": "qual-a-boa",
+  "version": "1.0.0",
+  "description": "Encontre os eventos que irão acontecer na cidade de Joinville.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohanacamp/qual-a-boa.git"
+  },
+  "author": "ohana team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohanacamp/qual-a-boa/issues"
+  },
+  "homepage": "https://github.com/ohanacamp/qual-a-boa#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
