@@ -11,7 +11,7 @@ export default class Event extends React.Component {
           <span className="event__date">
             <p>{props.date} </p>
           </span>
-          <img alt={props.name} src={props.avatar ? props.avatar.thumb_link : 'https://www.zndrke.com/dashboard/img/placeholder.png'} />
+          <img className="event__avatar" alt={props.name} src={props.avatar ? props.avatar.photo_link : 'https://www.zndrke.com/dashboard/img/placeholder.png'} />
         </div>
         <div className="event__info" >
           <span className="event__place">
