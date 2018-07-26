@@ -8,4 +8,4 @@ app.get('/events', (req, res) => {
     res.send('Hello World!')
 } 
 
-app.listen(PORT, () => console.log(`Example app listening on port ${ PORT }!`))
+app.listen(5000, () => {console.log(`Example app listening on port 5000!`)})
