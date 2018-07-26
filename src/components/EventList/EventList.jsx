@@ -14,8 +14,8 @@ export default class EventList extends React.Component {
             }
         })
             .then(res => {
-                const events = res.data;
-                this.setState({ events });
+                const listEvents = res.data;
+                this.setState({ events: listEvents.events });
             })
     }
 
@@ -23,7 +23,9 @@ export default class EventList extends React.Component {
         return (
             <div className="eventListCard">
                 <ul>
-                    {this.state.events.map((event, index) => <li key={index}>{event.name}</li>)}
+                    {this.state.events.map((event, index) =>
+                        <li key={index}><a href={event.link}>{event.name}</a></li>
+                         )}
                 </ul>
             </div>
         )
