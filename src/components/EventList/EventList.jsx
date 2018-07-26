@@ -25,7 +25,7 @@ export default class EventList extends React.Component {
         
         return (
         <div className = "eventListCard">
-            <ul> 
+            
             {this.state.events.map((event, index) =>
                 <Event 
                     key={index}
@@ -37,12 +37,10 @@ export default class EventList extends React.Component {
                     //address={event.venue.address_1}
                     description ={event.description}
                     attendance={event.attendance_count}
-                   
                     avatar={event.featured_photo}
                     
                 />
             )}
-            </ul>
         </div>
         )
     }
