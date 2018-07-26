@@ -3,10 +3,10 @@ import Event from "../Event/Event.jsx";
 
 export default class EventList extends React.Component {
     render() {
-        let events = this.props.children.events;
+        let events = this.props.events;
 
         return (
-            <div className = "eventListCard">
+            <div className="eventListCard">
                 <ul> 
                     {events.map((event, index) =>
                         <Event 
