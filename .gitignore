@@ -1,3 +1,4 @@
+<<<<<<< 370408fe967f0d02998d3b00509f5fb833a7a3da
 # Created by https://www.gitignore.io/api/node,code
 
 ### Code ###
@@ -95,3 +96,6 @@ typings/
 .env.development.local
 .env.test.local
 .env.production.local
+=======
+node_modules/
+>>>>>>> express server retrieves json data
