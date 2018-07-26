@@ -7,7 +7,12 @@ export default class EventList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`http://http://pokeapi.co/api/v2/pokemon/butterfree`)
+        axios.get(`http://localhost:5000/events`,{
+            params: {
+                lat: '-26.32',
+                lon: '-48.84'
+            }
+        })
             .then(res => {
                 const events = res.data;
                 this.setState({ events });
@@ -18,9 +23,10 @@ export default class EventList extends React.Component {
         return (
             <div className="eventListCard">
                 <ul>
-                    {this.state.events.map(event => <li>{event.name}</li>)}
+                    {this.state.events.map((event, index) => <li key={index}>{event.name}</li>)}
                 </ul>
             </div>
         )
     }
 }
+

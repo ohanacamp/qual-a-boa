@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
+import EventList from '../EventList/EventList';
 
 class App extends Component {
 	
@@ -10,6 +11,9 @@ class App extends Component {
 				<header className="App-header">
 					HelloWorld
 				</header>
+				<EventList>
+					{this.state}
+				</EventList>
 		  </div>
 		);
 	}
