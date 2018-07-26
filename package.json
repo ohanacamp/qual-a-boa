@@ -2,19 +2,20 @@
   "name": "qual-a-boa",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000/",
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "react-scripts": "1.1.4",
-    "react-test-renderer": "^16.4.1",
-    "express": "^4.16.3",
-    "request": "^2.87.0"
+    "react-test-renderer": "^16.4.1"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.4",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "express": "^4.16.3",
+    "request": "^2.87.0"
   },
   "scripts": {
     "start": "react-scripts start",
