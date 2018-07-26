@@ -1,0 +1,36 @@
+.event{
+  display: grid;
+  width: 50rem;
+  height: auto;
+  padding: 2px 16px;
+  grid-template-columns: 1fr 2fr ;
+  grid-template-rows: 0.5fr 1fr ;
+  grid-template-areas:
+   "event__header event__info"
+   "event__description event__description";
+}
+.event__header {
+    grid-area: event__header;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.event__info {
+    grid-area: event__info;
+    background-color: gray;
+    text-align: center;
+}
+
+.event__description {
+    grid-area: event__description;
+    background-color: lavender;
+    text-align: center;
+}
+
+.event__avatar {
+    width: 200px;
+    height: 200px;
+}
+.Event:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

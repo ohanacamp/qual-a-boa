@@ -9,9 +9,15 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header className="App-header">
-					HelloWorld
+					<div className="App-header__logo">
+						<img className="logo"src="https://d30y9cdsu7xlg0.cloudfront.net/png/15343-200.png" alt="Qual a Boa Joinville?"/>
+					</div>
+				
+					<div className="App-header__title">
+						<h1>Qual a boa Joinville?</h1>
+					</div>
 				</header>
-				<EventList>
+				<EventList >
 					{this.state}
 				</EventList>
 		  </div>

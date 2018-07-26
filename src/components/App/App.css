@@ -1,10 +1,32 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .App-header {
-  background-color: #222;
+  background-image:linear-gradient(45deg, lightblue, blue);
+  width: 100vw;
   height: 50px;
   padding: 20px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header__logo {
+  width: 15rem;
+  height: 50px;
+  padding: 0px;
+  align-self: flex-start;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.app-header__title {
+  align-self: flex-end;
 }
