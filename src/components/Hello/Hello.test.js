@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Hello from './Hello.jsx'
+import Hello from './Hello'
 
 describe('Hello World test case', () => {
 	it('should return Hello World!', () => {
