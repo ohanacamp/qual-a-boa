@@ -4,8 +4,17 @@ const path = require('path')
 const request = require('request')
 const PORT = process.env.PORT || 3000
 
-app.get('/events', (req, res) => {
-    res.send('Hello World!')
-}); 
 
-app.listen(5000, () => {console.log(`Example app listening on port 5000!`)})
+
+app.get('/events', (req, res) => {
+    const URL = 'https://api.meetup.com/find/upcoming_events'
+
+    request.get({ url: URL, qs: req.query, json: true}, (err, _, body) => {
+        err ? res.json(err): res.json(body)
+    })
+}) 
+
+
+app.use(express.static(path.join(__dirname, 'public')))
+
+app.listen(PORT, () => console.log(`Example app listening on port ${ PORT }!`))
